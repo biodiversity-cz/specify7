@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=SpecifyDBSecurityWizard_64
+Exec="/opt/Specify/bin/SpecifyDBSecurityWizard" %U
+Icon=/opt/Specify/.install4j/SpecifyDBSecurityWizard.png
+Categories=Application;
+StartupWMClass=install4j-edu-ku-brc-specify-config-init-secwiz-SpecifyDBSecurityWizardFrame

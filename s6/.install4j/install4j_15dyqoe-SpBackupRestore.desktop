@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=SpBackupRestore_64
+Exec="/opt/Specify/bin/SpBackupRestore" %U
+Icon=/opt/Specify/.install4j/SpBackupRestore.png
+Categories=Application;
+StartupWMClass=install4j-edu-ku-brc-specify-BackupAndRestoreApp

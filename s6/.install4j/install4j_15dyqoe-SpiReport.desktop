@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=SpiReport_64
+Exec="/opt/Specify/bin/SpiReport" %U
+Icon=/opt/Specify/.install4j/SpiReport.png
+Categories=Application;
+StartupWMClass=install4j-edu-ku-brc-specify-tools-ireportspecify-MainFrameSpecify
