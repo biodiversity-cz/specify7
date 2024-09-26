@@ -7,8 +7,7 @@ COPY  --chown=specify:specify 0002_geo.py /opt/specify7/specifyweb/specify/migra
 
 USER root
 RUN   mkdir /sock && \
-    chown -R specify:specify /sock && \
-    chown -R specify:specify /volumes/static-files  #done in original Docker file but somehow required
+    chown -R specify:specify /sock
 
 USER specify
 CMD ["ve/bin/gunicorn", "-w", "3", "-b", "unix:/sock/docker.sock", "-t", "300", "specifyweb_wsgi"]
