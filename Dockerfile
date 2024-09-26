@@ -4,3 +4,10 @@ LABEL description="Individual build of Specify 7 docker image"
 
 COPY  --chown=specify:specify s6 /opt/Specify
 COPY  --chown=specify:specify 0002_geo.py /opt/specify7/specifyweb/specify/migrations/0002_geo.py
+
+USER root
+RUN   mkdir /sock && \
+    chown -R specify:specify /sock
+
+USER specify
+CMD ["ve/bin/gunicorn", "-w", "3", "-b", "unix:/sock/docker.sock", "-t", "300", "specifyweb_wsgi"]
