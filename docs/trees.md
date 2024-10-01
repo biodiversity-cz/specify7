@@ -6,6 +6,7 @@ Každý strom má výčet *ranků*, povolených či povinných hierachických ú
 
 Ranky jde přidávat, přejmenovávat a jinak upravovat
 * S7: Trees -> 🖉 -> TTD | Tree Def Items
+* S6: Trees -> Open Tree Definition -> poklikem na řádek upravuji daný rank, add/delete je skryté úplně vpravo dole
 
 ### položky
 Položkou je třeba konkrétní taxon, nebo místnost. 
