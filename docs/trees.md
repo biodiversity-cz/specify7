@@ -1,6 +1,7 @@
 # Správa stromových číselníků
 Geografická jména, taxony a fyzické umístění exponátů jsou hierarchické číselníky, dále jen *stromy*.
 
+## Struktura
 ### ranky
 Každý strom má výčet *ranků*, povolených či povinných hierachických úrovní. Tyto *ranky* se nazývají *Tree Def Items* a nastavují se v S6 Wizard při zakládání kolekce. Wizard ale neobsahuje všechny - v S7 vidím u taxonů třeba i "forma/subforma" což Wizard neukazoval. 
 
@@ -16,6 +17,9 @@ jde tedy nastavit zda se:
 
 ### položky
 Položkou je třeba konkrétní taxon, nebo místnost. 
+
+## Data
+Dílčí položky lze buď vkládat ručně **S7->Trees->Taxon** nebo pomocí [dávkového importu](imports.md).
 
 ### TODO
 * neznáme chování když je rank definován + u nějakého taxonu vyplněn a přitom ho z Tree Def Items smažeme
