@@ -8,6 +8,12 @@ Ranky jde přidávat, přejmenovávat a jinak upravovat
 * S7: Trees -> 🖉 -> TTD | Tree Def Items
 * S6: Trees -> Open Tree Definition -> poklikem na řádek upravuji daný rank, add/delete je skryté úplně vpravo dole
 
+jde tedy nastavit zda se:
+* má kurátorovi nabízet/mít možnost ji použít (tj. zda ten rank existuje)
+* "is required" je interní požadavek Specify, nelze změnit, ukazuje se asi jen ve Wizard
+* je pro kurátory resp. Collection object povinná
+* vypisuje se do "plného jména" taxonu. Je tedy zřejmě na kurátorovi zda zvolí přístup psát do Species celé jméno (a Genus nevypisuje) nebo jen druhový přívlastek (a vypisuje Genus) 
+
 ### položky
 Položkou je třeba konkrétní taxon, nebo místnost. 
 
