@@ -1,10 +1,10 @@
 name: Create and publish a Docker image
 on:
     push:
-        branches:
-            - main
+#        branches:
+#            - main
+        tags: [ '*' ]
     workflow_dispatch:  # Manual run
-#    tags: [ 'v*.*.*' ]
 
 env:
     REGISTRY: ghcr.io
@@ -32,22 +32,18 @@ jobs:
                 uses: docker/metadata-action@v5.5.1
                 with:
                     images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-            -   name: Set date for tagging
-                id: date
-                run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-            -   name: Build and push Docker image
-                id: push
-                uses: docker/build-push-action@v6.7.0
-                with:
-                    context: .
-                    push: true
-                    tags: | 
-                        ${{ steps.meta.outputs.tags }}
-                        ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.date.outputs.date }}
-                    labels: ${{ steps.meta.outputs.labels }}
-            -   name: Generate artifact attestation
-                uses: actions/attest-build-provenance@v1
-                with:
-                    subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
-                    subject-digest: ${{ steps.push.outputs.digest }}
-                    push-to-registry: true
+            - name: Build and push Docker image
+              id: push
+              uses: docker/build-push-action@v6.9.0
+              with:
+                  context: .
+                  push: true
+                  pull: true
+                  tags: ${{ steps.meta.outputs.tags }}
+                  labels: ${{ steps.meta.outputs.labels }}
+            - name: Generate artifact attestation
+              uses: actions/attest-build-provenance@v1
+              with:
+                  subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
+                  subject-digest: ${{ steps.push.outputs.digest }}
+                  push-to-registry: true
