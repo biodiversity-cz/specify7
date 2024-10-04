@@ -1,7 +1,9 @@
 # Hromadné importy dat
 Specify má velmi silný nástroj pro import dat = Workbench. V principu jde o mapování sloupců Excelu na sloupce databázových tabulek. Přes Workbench jde improtovat taxony, sbírkové položky, asi cokoliv. Níže pár příkladů jak na to:
 
-## taxa #1, S7
+## stromové číselníky
+Pro nás zejména taxony, postupujte obezřetně. Myslím že sice je lze hromadně naimportovat, ale už nikoli hromadně smazat - to se pak kliká po jednom(!).
+### taxa #1, S7
 Máme taxony v Excelu, soubor [taxa1](data/taxa1.xlsx) a chceme je přidat do stromu taxonů. 
 
 S7: Workbench -> Import file -> šedý obdélník nahrát.. -> Import file -> "No upload plan is defined" -> Create -> Taxon
