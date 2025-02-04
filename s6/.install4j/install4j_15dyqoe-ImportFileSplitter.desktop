@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=ImportFileSplitter_64
-Exec="/opt/Specify/bin/ImportFileSplitter" %U
-Icon=/opt/Specify/.install4j/ImportFileSplitter.png
-Categories=Application;
-StartupWMClass=install4j-edu-ku-brc-specify-utilapps-ImportFileSplitter

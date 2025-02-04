@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Specify4GB_64
-Exec="/opt/Specify/bin/Specify4GB" %U
-Icon=/opt/Specify/.install4j/Specify4GB.png
-Categories=Application;
-StartupWMClass=install4j-edu-ku-brc-specify-Specify_Specify4GB

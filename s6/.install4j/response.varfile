@@ -1,7 +1,0 @@
-# install4j response file for Specify 6.8.03
-executeLauncherAction=none
-sys.adminRights$Boolean=true
-sys.installationDir=/opt/Specify
-sys.languageId=en
-sys.programGroupDisabled$Boolean=false
-sys.symlinkDir=/usr/local/bin
