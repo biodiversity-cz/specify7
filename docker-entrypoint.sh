@@ -1,4 +1,6 @@
 #!/bin/bash
+#added shebang only, otherwise equal to official one
+
 set -e
 if [ -z "$(ls -A /volumes/static-files/specify-config)" ]; then
   mkdir -p /volumes/static-files/specify-config/config/
