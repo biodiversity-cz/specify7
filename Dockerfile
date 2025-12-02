@@ -1,4 +1,4 @@
-FROM specifyconsortium/specify7-service:production@sha256:04a6e7a3757df8449e6a3125df45d95d2423ea2881fb81d251b12dcbb10e1266
+FROM specifyconsortium/specify7-service:7.11@sha256:6b880cd01228100f3b8e8e0cbb005be32a4774aedfd68a6d0cf82097792eb0dd
 LABEL org.opencontainers.image.source=https://github.com/biodiversity-cz/specify7
 LABEL description="Individual build of Specify 7 docker image"
 
