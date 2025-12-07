@@ -7,7 +7,8 @@ COPY --chown=specify:specify docker-entrypoint.sh /opt/specify7/docker-entrypoin
 USER root
 RUN mkdir /sock && \
     chown -R specify:specify /sock && \
-    chmod -R 777 /volumes
+    chmod -R 777 /volumes && \
+    chmod -R 777 /sock
 
 USER specify
 
