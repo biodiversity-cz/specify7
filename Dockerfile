@@ -3,6 +3,8 @@ LABEL org.opencontainers.image.source=https://github.com/biodiversity-cz/specify
 LABEL description="Individual build of Specify 7 docker image"
 
 COPY --chown=specify:specify docker-entrypoint.sh /opt/specify7/docker-entrypoint.sh
+COPY --chown=specify:specify specify_settings.py /opt/specify7/settings/specify_settings.py
+
 
 USER root
 RUN mkdir /sock && \
